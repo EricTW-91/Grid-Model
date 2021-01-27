@@ -23,7 +23,7 @@ header, nav, section, aside, footer{
 }
 
 header{
-    background: #ff8686;;
+    background: #ff8686;
     color: black;
     font-size: 10vh;
 }
@@ -37,24 +37,34 @@ section{
     grid-template-rows: 20% 80%;
 }
 
-h1, article{
-    /* text-align: center; */
+aside{
+    background: #d1d1d1;
 }
 
 h1{
     background: #ff8686;;
 }
 
-article{
-    background: #f868f8;;
-}
-
-aside{
-    background: #d1d1d1;;
-
-}
-
 footer{
-    background: #ffb96a;;
+    background: #ffb96a;
 
+}
+
+h1{
+    background: #ff8686;
+}
+
+article{
+    background: #f868f8;
+}
+
+@media (max-width: 800px){
+    main{
+        display: grid;
+        grid-template-columns: 75vw 25vw;
+        grid-auto-rows: 10vh 5vh 75vh 10vh;
+        /* grid-gap: 1em; */
+        justify-items: center;
+        align-items: center;
+    }
 }
